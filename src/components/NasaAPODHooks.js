@@ -12,10 +12,11 @@ const NasaAPODHooks = props => {
     setData(data);
     setLoaded(true);
   };
+  const fetchCallback = React.useCallback(fetchData, []);
 
   useEffect(() => {
-    fetchData();
-  }, []);
+    fetchCallback();
+  }, [fetchCallback]);
 
   if (loaded) {
     return (
