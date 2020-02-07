@@ -1,38 +1,54 @@
-.App {
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-color: #333;
+}
+
+header {
+  color: #ffd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+select {
+  position: absolute;
+  height: 25px;
+}
+
+.select-left {
+  left: 10px;
+}
+
+.right-select {
+  right: 10px;
+}
+
+.loading {
+  color: #eee;
+  height: 100vh;
+  width: 100%;
+  line-height: 100vh;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nasa-title {
+  color: #eee;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nasa-image {
+  width: 35%;
+  border-radius: 7px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nasa-explanation {
+  font-size: 0.95em;
+  padding: 2em 10em 0 10em;
+  color: #ddd;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nasa-info {
+  margin-top: 3em;
+  color: #bbb;
 }
