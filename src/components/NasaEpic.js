@@ -7,7 +7,6 @@ const NasaEpic = props => {
 
   const fetchData = async () => {
     const response = await fetch(
-      // `https://api.nasa.gov/EPIC/api/natural/date/2019-06-01?api_key=YFVlhLeos70ya4Yzwqa0IrzhAlEna0BpldxvZVuk`
       `https://api.nasa.gov/EPIC/api/natural/date/2019-06-01?api_key=${props.apiKey}`
     );
     const data = await response.json();

@@ -6,7 +6,6 @@ const NasaAPODHooks = props => {
 
   const fetchData = async () => {
     const response = await fetch(
-      // `https://api.nasa.gov/planetary/apod?api_key=YFVlhLeos70ya4Yzwqa0IrzhAlEna0BpldxvZVuk`
       `https://api.nasa.gov/planetary/apod?api_key=${props.apiKey}`
     );
     const data = await response.json();
