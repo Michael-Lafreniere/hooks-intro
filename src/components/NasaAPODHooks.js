@@ -12,7 +12,6 @@ const NasaAPODHooks = props => {
     setData(data);
     setLoaded(true);
   };
-  // const fetchCallback = React.useCallback(fetchData, []);
 
   useEffect(() => {
     fetchData();

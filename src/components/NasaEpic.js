@@ -20,7 +20,6 @@ const NasaEpic = props => {
     );
     setLoaded(true);
   };
-  // const fetchCallback = React.useCallback(fetchData, []);
 
   useEffect(() => {
     fetchData();
